@@ -1,19 +1,17 @@
 #include <iostream>
 #include "Critter.h"
-#include "Critter.cpp"
+#include "Orco.h"
 #include "Granja.h"
 
 
 using namespace std;
 
-int main()
-{
+int main() {
     Critter crit;
     crit.Talk();
 
     int opcio;
-    do
-    {
+    do {
         Critter* critter1 = new Critter();
         Critter* critter2 = new Critter();
 
@@ -29,13 +27,13 @@ int main()
         cout << "4 - Fer esport" << endl;
         cout << "5 - Estudair" << endl;
         cout << "6 - Mostrar la Granja de Critters" << endl;
+        cout << "7 - Mostrar les estadistiques del Critter" << endl;
 
         cout << "Que vols fer?:" << endl;
         cin >> opcio;
 
-        switch (opcio) 
-        {
-        case 0: 
+        switch (opcio) {
+        case 0:
             cout << "Fins despres" << endl;
             break;
         case 1:
@@ -52,12 +50,12 @@ int main()
             crit.Study();
         case 6:
             granja.RollCall();
+        case 7:
+            crit.Stats();
         default:
             cout << "No es reconeix aquesta opcio, siusplau tria una opcio valida" << endl;
         }
 
-
     } while (opcio != 0);
     return 0;
 }
-

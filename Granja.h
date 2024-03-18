@@ -5,13 +5,10 @@
 
 using namespace std;
 
-class Granja
-{
-public:
-    Granja(int espais = 1);
-    void Add(Critter* aCritter);
-    void RollCall() const;
+class Granja {
+public: Granja(int espais = 1);
+	  void Add(Critter* aCritter);
+	  void RollCall() const;
 
-private:
-    vector<Critter*> m_Critters; 
+private: vector < Critter* > m_Critters;
 };

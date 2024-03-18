@@ -14,3 +14,4 @@ void Granja::RollCall() const {
     }
 }
 
+Granja::Granja(int espais) : m_Espais(espais) {}
