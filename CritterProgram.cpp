@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     Critter crit;
     crit.Talk();
-    Orco o;
+    Orco orc;
 
     int opcio;
     do {
@@ -27,7 +27,7 @@ int main() {
         cout << "5 - Estudair" << endl;
         cout << "6 - Mostrar la Granja de Critters" << endl;
         cout << "7 - Mostrar les estadistiques del Critter" << endl;
-
+        cout << "8 - Saludar a l'Orco" << endl;
         cout << "Que vols fer?:" << endl;
         cin >> opcio;
 
@@ -51,6 +51,8 @@ int main() {
             granja.RollCall();
         case 7:
             crit.Stats();
+        case 8:
+            orc.Greet();
         default:
             cout << "No es reconeix aquesta opcio, siusplau tria una opcio valida" << endl;
         }
