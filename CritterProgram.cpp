@@ -20,11 +20,11 @@ int main() {
 
         cout << "Critter Caretaker" << endl;
         cout << "0 - Sortir" << endl;
-        cout << "1 - Escolatar el teu Critter" << endl;
+        cout << "1 - Escoltar el teu Critter" << endl;
         cout << "2 - Donar de menjar al teu Critter" << endl;
         cout << "3 - Jugar amb el teu Critter" << endl;
         cout << "4 - Fer esport" << endl;
-        cout << "5 - Estudair" << endl;
+        cout << "5 - Estudiar" << endl;
         cout << "6 - Mostrar la Granja de Critters" << endl;
         cout << "7 - Mostrar les estadistiques del Critter" << endl;
         cout << "8 - Saludar a l'Orco" << endl;
@@ -43,16 +43,22 @@ int main() {
             break;
         case 3:
             crit.Play();
+            break;
         case 4:
             crit.Sport();
+            break;
         case 5:
             crit.Study();
+            break;
         case 6:
             granja.RollCall();
+            break;
         case 7:
             crit.Stats();
+            break;
         case 8:
             orc.Greet();
+            break;
         default:
             cout << "No es reconeix aquesta opcio, siusplau tria una opcio valida" << endl;
         }
