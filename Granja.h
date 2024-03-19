@@ -11,5 +11,5 @@ public: Granja(int espais = 1);
 	  void Add(Critter* aCritter);
 	  void RollCall() const;
 
-private: vector < Critter* > m_Critters;
+private: vector < Critter* > m_Critters;//Es van guardant en un vector
 };

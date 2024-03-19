@@ -73,4 +73,4 @@ void Peek(const Critter& aCritter) {
     cout << aCritter.m_Name << endl;
 }
 
-Critter::Critter(int hunger, int boredom) : m_Hunger(hunger), m_Boredom(boredom) {}
+Critter::Critter(int hunger, int boredom) : m_Hunger(hunger), m_Boredom(boredom) {}//Constructor del critter
