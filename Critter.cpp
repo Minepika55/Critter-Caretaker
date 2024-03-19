@@ -10,12 +10,14 @@ void Critter::Talk() {
 void Critter::Eat(int food) {
     cout << "Li dones de menjar al teu Critter, ara ja no té tanta gana" << endl;
     food++;
+    m_Hunger++;
     cout << "El nivell de gana del Critter es el seguent  " << m_Hunger << endl;
 }
 
 void Critter::Play(int fun) {
     cout << "Jugues una estona amb el teu Critter, ara ja no es sent tan aborrit" << endl;
     fun++;
+    m_Boredom++;
     cout << "El nivell d'aborriment del Critter es el seguent  " << m_Boredom << endl;
 }
 
