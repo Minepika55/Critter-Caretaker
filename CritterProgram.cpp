@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Granja.h"
-
+//Aqui he inclos la granja la qual ho embolcalla tot
 
 using namespace std;
 
@@ -8,16 +8,16 @@ int main() {
     Critter crit;
     crit.Talk();
     Orco orc;
-
+    
     int opcio;
-    do {
+    do {//Aqui comenca el bucle del codi
         Critter* critter1 = new Critter();
         Critter* critter2 = new Critter();
 
         Granja granja;
         granja.Add(critter1);
         granja.Add(critter2);
-
+        //Aqui podem veure les opcions del codi
         cout << "Critter Caretaker" << endl;
         cout << "0 - Sortir" << endl;
         cout << "1 - Escoltar el teu Critter" << endl;
@@ -60,9 +60,9 @@ int main() {
             orc.Greet();
             break;
         default:
-            cout << "No es reconeix aquesta opcio, siusplau tria una opcio valida" << endl;
+            cout << "No es reconeix aquesta opcio, siusplau tria una opcio valida" << endl;//Una resposta per si la opcio seleccionada es incorrecta
         }
 
-    } while (opcio != 0);
+    } while (opcio != 0);//Si el jugador marca un zero el codi s'acaba
     return 0;
 }

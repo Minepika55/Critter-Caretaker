@@ -1,4 +1,5 @@
 #include "Critter.h"
+//Aqui hi han les diferents funcions del Critter
 
 void Critter::Talk() {
     cout << "Xerres amb el teu Critter una estoneta, es sent mes felic despres de parlar amb tu" << endl;
@@ -7,8 +8,9 @@ void Critter::Talk() {
     cout << "El meu nivell d'aborriment es el seguent " << m_Boredom << endl;
 }
 
+//Aqui hi han les interaccions positives
 void Critter::Eat(int food) {
-    cout << "Li dones de menjar al teu Critter, ara ja no té tanta gana" << endl;
+    cout << "Li dones de menjar al teu Critter, ara ja no te tanta gana" << endl;
     food++;
     m_Hunger++;
     cout << "El nivell de gana del Critter es el seguent  " << m_Hunger << endl;
@@ -21,8 +23,9 @@ void Critter::Play(int fun) {
     cout << "El nivell d'aborriment del Critter es el seguent  " << m_Boredom << endl;
 }
 
+//Aqui les que resten a les estadistiques
 void Critter::Sport(int fun) {
-    cout << "El Critter fa esport amb una pilota, es sent més content pero ara te mes gana." << endl;
+    cout << "El Critter fa esport amb una pilota, es sent mes content pero ara te mes gana." << endl;
     fun++;
     m_Hunger--;
     cout << "El nivell de gana del Critter es el seguent  " << m_Hunger << endl;
@@ -35,6 +38,7 @@ void Critter::Study(int fun) {
     cout << "El nivell d'aborriment del Critter es el seguent  " << m_Boredom << endl;
 }
 
+//Aqui hi ha un void que controla el pas del temps
 void Critter::PassTime(int time) {
     time++;
     m_Hunger--;
@@ -49,6 +53,7 @@ void Critter::PassTime(int time) {
     }
 }
 
+//Aqui tenim algunes funcions addicionals com el greet i les estadistiques per separat
 void Critter::Stats() const {
     cout << "Nivell de gana: " << m_Hunger << endl;
     cout << "Nivell d'avorriment: " << m_Boredom << endl;

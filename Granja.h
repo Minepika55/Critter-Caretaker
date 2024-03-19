@@ -5,6 +5,7 @@
 #include "Orco.h"
 using namespace std;
 
+//Aqui hi ha la granja la qual guarda els Critters
 class Granja {
 public: Granja(int espais = 1);
 	  void Add(Critter* aCritter);
