@@ -1,6 +1,4 @@
 #include <iostream>
-#include "Critter.h"
-#include "Orco.h"
 #include "Granja.h"
 
 
@@ -9,6 +7,7 @@ using namespace std;
 int main() {
     Critter crit;
     crit.Talk();
+    Orco o;
 
     int opcio;
     do {

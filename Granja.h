@@ -1,8 +1,8 @@
 #pragma once
-#include "Critter.h"
+
 #include <vector>
 #include <iostream>
-
+#include "Orco.h"
 using namespace std;
 
 class Granja {

@@ -6,7 +6,7 @@ void Orco::SpecialAttack() const {
         " damage points!\n";
 }
 
-void Orco::Greet() const override {
+void Orco::Greet() const  {
     cout << "Orc gruny hola." << endl;
 }
 

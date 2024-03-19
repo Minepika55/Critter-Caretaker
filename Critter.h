@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Critter {
 public: Critter(int hunger = 0, int boredom = 0);
       void Talk();
@@ -5,8 +9,8 @@ public: Critter(int hunger = 0, int boredom = 0);
       void Play(int fun = 4);
       void Sport(int fun = 4);
       void Study(int fun = 4);
-      void Stats();
-      virtual void Greet() const;
+      void Stats() const;
+      virtual void Greet() const ;
       friend void Peek(const Critter& aCritter);
       friend ostream& operator << (ostream& os, const Critter& aCritter);
       string m_Name;

@@ -7,7 +7,7 @@ using namespace std;
 class Orco : public Critter {
 public: int m_DamageMultiplier;
 	  Orco();
-	  void SpecialAttack() const override;
+	  void SpecialAttack() const ;
 	  int m_Damage;
-	  void Greet() const override;
+	  void Greet() const ;
 };

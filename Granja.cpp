@@ -1,6 +1,4 @@
 #include "Granja.h"
-#include "Critter.h"
-#include <iostream>
 
 using namespace std;
 
@@ -14,4 +12,4 @@ void Granja::RollCall() const {
     }
 }
 
-Granja::Granja(int espais) : m_Espais(espais) {}
+Granja::Granja(int espais) { m_Critters.reserve(espais); }
